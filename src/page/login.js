@@ -1,5 +1,11 @@
 import React from "react";
-import { MainContainer, Form } from "../style/loginstyle";
+import {
+  MainContainer,
+  Form,
+  Input,
+  Button,
+  Credentialscontainer,
+} from "../style/loginstyle";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -7,21 +13,23 @@ const Login = () => {
   return (
     <>
       <MainContainer>
-        <div>
-          <h1>Login</h1>
-          <p>Welcome!</p>
-        </div>
-        <Form>
-          <input type="text" placeholder="Username or Email"></input>
-          <input type="password" placeholder="Password"></input>
-        </Form>
-        <button
-          onClick={() => {
-            navigate("/dashboard");
-          }}
-        >
-          Login
-        </button>
+        <Credentialscontainer>
+          <div>
+            <h1>Login</h1>
+            <p>Welcome!</p>
+          </div>
+          <Form>
+            <Input type="text" placeholder="Username or Email"></Input>
+            <Input type="password" placeholder="Password"></Input>
+          </Form>
+          <Button
+            onClick={() => {
+              navigate("/dashboard");
+            }}
+          >
+            Login
+          </Button>
+        </Credentialscontainer>
       </MainContainer>
     </>
   );
