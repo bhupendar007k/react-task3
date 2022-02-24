@@ -9,6 +9,10 @@ export const MainContainer = styled.div`
   font-size: 20px;
   font-family: "Outfit", sans-serif;
   border: 1px solid black;
+  .table-data {
+    height: 400;
+    background-color: white;
+  }
 `;
 export const Td = styled.div`
   width: 100%;
@@ -16,7 +20,7 @@ export const Td = styled.div`
   display: grid;
   padding-top: 19px;
   grid-template-columns: auto auto auto auto auto auto;
-  border: 1px solid black;
+  border: 1px dashed black;
   align-items: center;
   align-content: center;
   font-size: 20px;

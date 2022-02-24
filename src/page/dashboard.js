@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/navbar";
 import { MainContainer, Td, Tr, Th } from "../style/tablestyle";
-// import Table from "@mui/material/Table";
-// import TableBody from "@mui/material/TableBody";
-// import Th from '@mui/material/Th';
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
@@ -37,7 +34,7 @@ const Dashboard = () => {
           <Th>Image</Th>
         </Td>
         {data.map((row) => (
-          <Td style={{ height: 400, backgroundColor: "white" }}>
+          <Td style={{ height: 350, backgroundColor: "white" }}>
             <Tr>{row.id}</Tr>
             <Tr>{row.title}</Tr>
             <Tr>{row.category}</Tr>
@@ -46,7 +43,7 @@ const Dashboard = () => {
               style={{
                 justifyContent: "center",
                 alignSelf: "start",
-                widTh: 600,
+                width: 600,
               }}
             >
               {row.description}
@@ -54,7 +51,7 @@ const Dashboard = () => {
             <Tr>{row.price}</Tr>
             <Tr>
               {" "}
-              <img style={{ width: 150, height: 150 }} src={row.image} />
+              <img style={{ width: 130, height: 130 }} src={row.image} />
             </Tr>
           </Td>
         ))}
