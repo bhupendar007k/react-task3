@@ -1,47 +1,47 @@
 import styled from "styled-components";
+
 export const MainContainer = styled.div`
-  display: grid;
-  margin-top: 20px;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  font-family: "Outfit", sans-serif;
-  border: 1px solid black;
-  .table-data {
-    height: 400;
-    background-color: white;
-  }
-`;
-export const Td = styled.div`
-  width: 100%;
-  height: 30px;
-  display: grid;
-  padding-top: 19px;
-  grid-template-columns: auto auto auto auto auto auto;
-  border: 1px dashed black;
-  align-items: center;
-  align-content: center;
-  font-size: 20px;
-  font-family: "Outfit", sans-serif;
-`;
-export const Tr = styled.div`
-  width: 200px;
-  height: 150px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: black;
-  font-size: 20px;
   display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px;
 `;
-export const Th = styled.div`
+export const Table = styled.table`
+  border-collapse: collapse;
   width: 100%;
-  height: 50px;
-  color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 20px;
+`;
+export const Th = styled.th`
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 20 px;
+  color: #ffffff;
+  background-color: rgb(56 56 56);
+`;
+export const Td = styled.td`
+  border: 1px solid #ffffff;
+  font-weight: 400;
+  text-align: left;
+  padding: 8px;
+  font-size: 15px;
+  background-color: rgb(126 127 129 / 76%);
+`;
+export const Button = styled.button`
+  background-color: #585656;
+  color: white;
+  width: 60px;
+  height: 20px;
+  outline: none;
+  border: 1px;
+  border-radius: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+`;
+export const Input = styled.input`
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: solid grey 0.5px;
+  height: 20px;
+  width: auto;
+  border-radius: 10px;
 `;

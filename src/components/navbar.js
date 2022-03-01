@@ -40,34 +40,13 @@ const Navbar = () => {
           </Link>
         </Listitems>
         <Listitems>
-          <Link
-            className="items"
-            onClick={() => {
-              navigate("/News");
-            }}
-          >
-            News
-          </Link>
+          <Link className="items">News</Link>
         </Listitems>
         <Listitems>
-          <Link
-            className="items"
-            onClick={() => {
-              navigate("/Contact");
-            }}
-          >
-            Contact
-          </Link>
+          <Link className="items">Contact</Link>
         </Listitems>
         <Listitems>
-          <Link
-            className="items"
-            onClick={() => {
-              navigate("/About");
-            }}
-          >
-            About us
-          </Link>
+          <Link className="items">About us</Link>
         </Listitems>
       </Navmenu>
     </Navcontainer>
